@@ -56,7 +56,7 @@ Možnost filtrování podle jména, živého vyhledávání a řazení sloupců.
 - Generování tabulky, filtrace, řazení
 
 ### Backend
-- Jednoduchý PHP skript.
+- Python.
 
 ### Verzování
 - Git + GitHub  
