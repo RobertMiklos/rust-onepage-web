@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Posty",
+    "kills": 15420,
+    "deaths": 2150,
+    "shots_fired": 89000,
+    "shots_hit": 28480,
+    "headshots": 9800
+  },
+  {
+    "id": 2,
+    "name": "hJune",
+    "kills": 14800,
+    "deaths": 1800,
+    "shots_fired": 82000,
+    "shots_hit": 29500,
+    "headshots": 11200
+  },
+  {
+    "id": 3,
+    "name": "Blooprint",
+    "kills": 9500,
+    "deaths": 3200,
+    "shots_fired": 65000,
+    "shots_hit": 18200,
+    "headshots": 5400
+  },
+  {
+    "id": 4,
+    "name": "Welyn",
+    "kills": 8200,
+    "deaths": 2900,
+    "shots_fired": 58000,
+    "shots_hit": 16500,
+    "headshots": 4800
+  },
+  {
+    "id": 5,
+    "name": "Trausi",
+    "kills": 16200,
+    "deaths": 2400,
+    "shots_fired": 95000,
+    "shots_hit": 32000,
+    "headshots": 12500
+  },
+  {
+    "id": 6,
+    "name": "Spoonkid",
+    "kills": 7800,
+    "deaths": 5400,
+    "shots_fired": 70000,
+    "shots_hit": 15000,
+    "headshots": 3900
+  },
+  {
+    "id": 7,
+    "name": "Frost",
+    "kills": 8900,
+    "deaths": 2100,
+    "shots_fired": 52000,
+    "shots_hit": 17000,
+    "headshots": 6200
+  },
+  {
+    "id": 8,
+    "name": "AloneInTokyo",
+    "kills": 11500,
+    "deaths": 950,
+    "shots_fired": 48000,
+    "shots_hit": 19500,
+    "headshots": 7800
+  },
+  {
+    "id": 9,
+    "name": "CoconutB",
+    "kills": 12800,
+    "deaths": 4500,
+    "shots_fired": 98000,
+    "shots_hit": 24000,
+    "headshots": 6500
+  },
+  {
+    "id": 10,
+    "name": "Willjum",
+    "kills": 6500,
+    "deaths": 1800,
+    "shots_fired": 35000,
+    "shots_hit": 11000,
+    "headshots": 3200
+  },
+  {
+    "id": 11,
+    "name": "Stevie",
+    "kills": 7200,
+    "deaths": 2500,
+    "shots_fired": 49000,
+    "shots_hit": 14200,
+    "headshots": 4100
+  },
+  {
+    "id": 12,
+    "name": "Warrior",
+    "kills": 13900,
+    "deaths": 2800,
+    "shots_fired": 86000,
+    "shots_hit": 27500,
+    "headshots": 9200
+  },
+  {
+    "id": 13,
+    "name": "Tacularr",
+    "kills": 14500,
+    "deaths": 2200,
+    "shots_fired": 91000,
+    "shots_hit": 30500,
+    "headshots": 10800
+  },
+  {
+    "id": 14,
+    "name": "SebbyK",
+    "kills": 6900,
+    "deaths": 3800,
+    "shots_fired": 55000,
+    "shots_hit": 13500,
+    "headshots": 3600
+  },
+  {
+    "id": 15,
+    "name": "Enardo",
+    "kills": 5400,
+    "deaths": 6200,
+    "shots_fired": 60000,
+    "shots_hit": 10000,
+    "headshots": 2100
+  },
+  {
+    "id": 16,
+    "name": "ShackyHD",
+    "kills": 13200,
+    "deaths": 3100,
+    "shots_fired": 88000,
+    "shots_hit": 26000,
+    "headshots": 8900
+  },
+  {
+    "id": 17,
+    "name": "Ramsey",
+    "kills": 5800,
+    "deaths": 1200,
+    "shots_fired": 32000,
+    "shots_hit": 10500,
+    "headshots": 4500
+  },
+  {
+    "id": 18,
+    "name": "Motion",
+    "kills": 12100,
+    "deaths": 3500,
+    "shots_fired": 92000,
+    "shots_hit": 23000,
+    "headshots": 7100
+  },
+  {
+    "id": 19,
+    "name": "Stimpee",
+    "kills": 4500,
+    "deaths": 5800,
+    "shots_fired": 40000,
+    "shots_hit": 8500,
+    "headshots": 1800
+  },
+  {
+    "id": 20,
+    "name": "Tesla",
+    "kills": 9800,
+    "deaths": 2600,
+    "shots_fired": 68000,
+    "shots_hit": 21000,
+    "headshots": 6900
+  }
+]
