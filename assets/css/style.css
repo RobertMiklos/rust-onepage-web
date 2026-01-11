@@ -71,5 +71,5 @@ nav{
 }
 
 /*  */
-/* Nápad: Po kliknutí na tlačítko v navbaru se to tlačítko změní napořád stejně jak je to v #nav-links button:hover{} a tak i zůstane dokud nepřekliknu na jinnou záložku v navbaru. */
+/* Nápad: Po kliknutí na tlačítko v navbaru se to tlačítko změní napořád stejně jak je to v #nav-links button:hover{} a tak i zůstane dokud nepřekliknu na jinnou záložku v navbaru. Přes JS. */
 /*  */
