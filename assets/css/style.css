@@ -1,0 +1,66 @@
+:root{
+    --rust-color: #ce422b;
+    --text-main: #ebebeb;
+    --text-dim: #a0a0a0;
+    --bg-color: #121212;
+    --panel-color: #1e1e1e;
+    --border-glow: 0 0 1em rgba(206, 66, 43, 0.3);
+    --border-glow-active: 0 0 1em rgba(160, 160, 160, 0.3)
+}
+*{
+    font-family: "Roboto Condensed", sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/background_img.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: var(--panel-color);
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-logo{
+    width: 4em;
+    margin: 0 0 0 1.5em;
+}
+#nav-links{
+    margin: 0 1.5em 0 0;
+}
+#nav-links button{
+    margin: 0 4em;
+    padding: 0.3em 1em;
+    background-color: #1e1e1e;
+    color: var(--rust-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    font-size: large;
+    transition: all 0.3s ease;
+}
+#nav-links button:hover{
+    border: 2em solid rgb(var(--rust-color));
+    background-color: rgba(206, 66, 43, 0.25);
+    transform: translateY(-0.4em);
+    box-shadow: var(--border-glow);
+    cursor: pointer;
+}
+#nav-links button:active{
+    border: 2em, solid rgb(var(--text-dim));
+    background-color: rgba(160, 160, 160, 0.25);
+    box-shadow: var(--border-glow-active);
+}
+
+/*  */
+/* Nápad: Po kliknutí na tlačítko v navbaru se to tlačítko změní napořád stejně jak je to v #nav-links button:hover{} a tak i zůstane dokud nepřekliknu na jinnou záložku v navbaru. */
+/*  */
