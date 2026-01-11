@@ -30,10 +30,17 @@ nav{
     align-items: center;
     box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.5);
 }
-#nav-logo{
+#nav-logo button{
     width: 4em;
     margin: 0 0 0 1.5em;
     filter: drop-shadow(0 0 1em #ce422b);
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: transparent;
+    border-style: none;
+}
+#nav-logo button:hover{
+    transform: scale(1.1);
 }
 #nav-links{
     margin: 0 1.5em 0 0;
