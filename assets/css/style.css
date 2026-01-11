@@ -1,3 +1,6 @@
+*{
+    font-family: "Roboto Condensed", sans-serif;
+}
 :root{
     --rust-color: #ce422b;
     --text-main: #ebebeb;
@@ -6,9 +9,6 @@
     --panel-color: #1e1e1e;
     --border-glow: 0 0 1em rgba(206, 66, 43, 0.3);
     --border-glow-active: 0 0 1em rgba(160, 160, 160, 0.3)
-}
-*{
-    font-family: "Roboto Condensed", sans-serif;
 }
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/background_img.png);
