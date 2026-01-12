@@ -73,3 +73,32 @@ nav{
 /*  */
 /* Nápad: Po kliknutí na tlačítko v navbaru se to tlačítko změní napořád stejně jak je to v #nav-links button:hover{} a tak i zůstane dokud nepřekliknu na jinnou záložku v navbaru. Přes JS. */
 /*  */
+
+#app{
+    background-color: var(--panel-color);
+    max-width: 65em;
+    height: 20em;
+    margin: 4em auto;
+}
+#heading-space{
+    background-color: rgb(95, 82, 82);
+    width: 1em;
+    height: 1em;
+    padding: 4em;
+    margin: 0 0 3em 0;
+    text-transform: uppercase;
+    color: var(--rust-color);
+    letter-spacing: 0.2em;
+}
+#main-space{
+    background-color: #a0a0a0;
+    width: 1em;
+    height: 1em;
+    padding: 3em;
+    border-radius: 1em;
+    backdrop-filter: blur(1em);
+    transition: opacity 0.3 ease-in-out;
+
+    min-height: 40em;
+    background: rgba(0, 0, 0, 0.4);
+}

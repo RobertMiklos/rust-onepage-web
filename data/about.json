@@ -1,0 +1,13 @@
+{
+    "heading": "O projektu Protocol 614",
+    "content": {
+      "description": "Protocol 614 je hardcore Rust server zaměřený na komunitní hraní, vyvážené PvP a unikátní eventy. Naším cílem je vytvořit prostředí, kde se počítá každý výstřel a každá postavená zeď.",
+      "features": [
+        "Pravidelné wipe cykly (každý čtvrtek)",
+        "Aktivní admin tým bez zneužívání práv",
+        "Vlastní pluginy pro lepší herní zážitek",
+        "Stabilní hosting s nízkou odezvou"
+      ],
+      "footer_note": "Připoj se k nám a staň se součástí legendy."
+    }
+  }
