@@ -1,12 +1,14 @@
-{
-    "heading": "O projektu Protocol 614",
+[
+  {
+    "heading": "O projektu Rustanixed",
     "content": {
-      "description": "Protocol 614 je hardcore Rust server zaměřený na komunitní hraní, vyvážené PvP a unikátní eventy. Naším cílem je vytvořit prostředí, kde se počítá každý výstřel a každá postavená zeď.",
+      "description": "Rustanixed je vanilla Rust server zaměřený na PvP a komunitní hraní.",
       "features": [
-        "Pravidelné wipe cykly (každý čtvrtek)",
-        "Aktivní admin tým bez zneužívání práv",
-        "Vlastní pluginy pro lepší herní zážitek",
-        "Stabilní hosting s nízkou odezvou"
+        "Pravidelní týdenní wipe cykly (každý čtvrtek)",
+        "Aktivní Admin tým bez zneužívání práv",
+        "Stabilní hosting s nízkou odezvou",
+        "Měření statů na web-stránce"
       ]
     }
   }
+]

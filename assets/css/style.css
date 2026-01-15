@@ -1,5 +1,6 @@
 *{
     font-family: "Roboto Condensed", sans-serif;
+    box-sizing: border-box;
 }
 :root{
     --rust-color: #ce422b;
@@ -29,8 +30,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.5);
+    border-bottom: solid 0.2em var(--rust-color);
 }
-#nav-logo button{
+#logoBtn{
     width: 4em;
     margin: 0 0 0 1.5em;
     filter: drop-shadow(0 0 1em #ce422b);
@@ -39,13 +41,16 @@ nav{
     background: transparent;
     border-style: none;
 }
-#nav-logo button:hover{
+#logoBtn:hover{
     transform: scale(1.1);
 }
-#nav-links{
+#logoBtn:active{
+    transform: scale(0.8);
+}
+#navLinks{
     margin: 0 1.5em 0 0;
 }
-#nav-links button{
+#navLinks button{
     margin: 0 4em;
     padding: 0.3em 1em;
     background-color: #1e1e1e;
@@ -57,48 +62,90 @@ nav{
     font-size: large;
     transition: all 0.3s ease;
 }
-#nav-links button:hover{
-    border: 2em solid rgb(var(--rust-color));
+#navLinks button:hover{
+    border: 0.1em solid var(--rust-color);
     background-color: rgba(206, 66, 43, 0.25);
     transform: translateY(-0.4em);
     box-shadow: var(--border-glow);
     cursor: pointer;
+    box-shadow: 0 0.3em 1em rgba(206, 66, 43, 0.4), 0 0.3em 0 #8a2a1a;
 }
-#nav-links button:active{
-    border: 2em, solid rgb(var(--text-dim));
+#navLinks button:active{
+    border: 0.1em solid var(--text-dim);
     background-color: rgba(160, 160, 160, 0.25);
     box-shadow: var(--border-glow-active);
+    transform: translateY(0.4em);
 }
-
-/*  */
-/* Nápad: Po kliknutí na tlačítko v navbaru se to tlačítko změní napořád stejně jak je to v #nav-links button:hover{} a tak i zůstane dokud nepřekliknu na jinnou záložku v navbaru. Přes JS. */
-/*  */
-
 #app{
-    background-color: var(--panel-color);
+    /* background-color: var(--panel-color); */
     max-width: 65em;
-    height: 20em;
+    min-height: 20em;
     margin: 4em auto;
+    backdrop-filter: blur(2em);
+    box-shadow: var(--border-glow-active);
+    border-radius: 1em;
 }
-#heading-space{
-    background-color: rgb(95, 82, 82);
-    width: 1em;
-    height: 1em;
-    padding: 4em;
-    margin: 0 0 3em 0;
+#headingSpace{
+    /* background-color: rgb(95, 82, 82); */
+    width: auto;
+    padding: 2em;
     text-transform: uppercase;
     color: var(--rust-color);
     letter-spacing: 0.2em;
+    border-bottom: solid 0.1em var(--rust-color);
 }
-#main-space{
-    background-color: #a0a0a0;
-    width: 1em;
-    height: 1em;
+#mainSpace{
+    width: auto;
     padding: 3em;
-    border-radius: 1em;
-    backdrop-filter: blur(1em);
-    transition: opacity 0.3 ease-in-out;
-
-    min-height: 40em;
+    /* backdrop-filter: blur(1em); */
+    transition: opacity 0.3s ease-in-out;
+    min-height: auto;
     background: rgba(0, 0, 0, 0.4);
+    color: var(--text-main);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+.homePageParagraph{
+    font-size: 2em;
+}
+.homePageButton{
+    background-color: var(--rust-color);
+    padding: 1.2em 3em ;
+    color: var(--text-main);
+    font-size: 1.2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin: 4em auto 0 auto;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0.1em #8a2a1a;
+    overflow: hidden;
+}
+.homePageButton:hover{
+    transform: translateY(-0.1em);
+    background-color: #e34b32;
+    box-shadow: 0 0.3em 1em rgba(206, 66, 43, 0.4), 0 0.3em 0 #8a2a1a;
+    filter: brightness();
+}
+.homePageButton:active{
+    transform: translateY(0.1em);
+    box-shadow: 0 0.1em 0 #8a2a1a; 
+}
+.homePageButton::after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(255, 255, 255, 0.1) 50%, transparent 50%;
+    background-size: 100% 0.2em;
+    pointer-events: none;
+}
+.homePageMainSpace{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* min-height: 25em; */
 }

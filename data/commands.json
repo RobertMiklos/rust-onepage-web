@@ -1,0 +1,25 @@
+[
+  {
+    "heading": "Příkazy na serveru",
+    "commands": [
+    {
+      "id": 1,
+      "command": "/outpost",
+      "description": "Tenhle command tě portne do outpostu za 20 sekund."
+    },
+    {
+      "id": 2,
+      "command": "/home",
+      "description": "Tenhle command tě portne do tvojí base za 20 sekund."
+    },
+    {
+      "id": 3,
+      "command": "/tpr jméno_hráče",
+      "description": "Tenhle command tě portne na hráče kterého jste zadali za 20 sekund." 
+    }
+    ]
+  }
+]
+  
+  
+  

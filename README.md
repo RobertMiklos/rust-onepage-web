@@ -1,73 +1,66 @@
-# rust-onepage-web
+# Rust server one-page web
 
-## Stručný popis tématu (3–5 vět)
-Tento projekt je jednostránkový web zaměřený na zobrazování informací o hře Rust a statistik hráčů. Jednotlivé sekce webu se nebudou zobrazovat jako dlouhý scroll, ale jejich obsah se bude dynamicky načítat po kliknutí v navigaci do hlavního obsahového panelu. Textové části i interaktivní tabulka statistik budou načítány z JSON souborů pomocí AJAXu. Součástí webu bude také interaktivní mapa monumentů, kde po kliknutí na konkrétní bod vyjede detail s informacemi o dané lokaci. Cílem projektu je vytvořit moderní, rychlou a interaktivní aplikaci pracující s daty.
+## Stručný popis tématu
+Tento projekt je jednostránkový web zaměřený na zobrazování informací o Rust serveru Rustanixed a statistik hráčů. Jednotlivé sekce webu se nebudou ukazovat jako dlouhý scroll, ale jejich obsah se bude dynamicky načítat po kliknutí na zálošku v navigaci do jednoho okánka webu. Textové části, interaktivná mapa a tabulka statů budou načítány z JSON souborů pomocí AJAXu. Cílem projektu je vytvořit moderní, rychlou a interaktivní aplikaci pracující s daty.
 
 ## Cílová skupina
-Hráči hry Rust, začátečníci hledající základní informace, lidé sledující herní statistiky a členové herní komunity se zájmem o herní data.
+Hráči hry Rust a konkrétně hráči serveru Rustanixed hledající příkazy, informace o mapě nebo vlastní staty na serveru.
 
 ---
 
-## Návrh obsahových sekcí (načítané přes navigaci)
+## Návrh Obsahových sekcí (načítané přes navigaci)
 
-### 1. O hře Rust
-Stručný popis hry, survival mechaniky, PvP/PvE systém, crafting a základní principy.  
-*(Obsah načítaný z JSON souboru.)*
+### 0. Home page
+Přivítáni na webu.
 
-### 2. Začátečnická příručka
-Tipy pro první hodiny hraní: získávání surovin, výroba základního vybavení, stavba jednoduché základny.  
-*(Obsah načítaný z JSON.)*
+### 1. O serveru
+Stručný popis serveru a jeho vychytávky.
+*(Obsah načítaný z JSON)*
+
+### 2. Příkazy
+Seznam příkazů a vysvětlení co dělají.
+*(Obsah načítaný z JSON)*
 
 ### 3. Interaktivní mapa monumentů
-Obrázková mapa Rustu s klikacími body (Launch Site, Airfield, Dome atd.).  
-Po kliknutí na bod se pomocí AJAXu načtou data o monumentu z JSON a zobrazí se popup s detaily (loot, radiation, popis, doporučené vybavení).  
-*(JSON + AJAX + JS popup.)*
+Rust mapa s klikacími body (Launch Site, Dome, Rig, Airfield atd.). Po kliknutí na bod se zobrazí popup s detaily monumentu (loot, radiation, key-card puzzle)
+*(Obsah načítaný z JSON)*
 
-### 4. Statistiky hráčů – interaktivní tabulka
-Dynamicky načítaná tabulka se statistikami hráčů (jméno, K/D, hodiny hraní…).  
-Možnost filtrování podle jména, živého vyhledávání a řazení sloupců.  
-*(AJAX + DOM manipulace.)*
+### 4. Tabulka statistik hráčů
+Tabulka se statistikami hráčů hrajících na serveru. Tabulka bude obsahovat (jméno, K/D, hodiny hraní, vystřelený náboje, zasažený náboje a hlavi)
+*(Obsah načítaný z JSON)*
 
 ---
 
 ## Návrh designu / wireframe
-- Navigační lišta nahoře – přepíná jednotlivé sekce bez reloadu.  
-- Jeden centrální obsahový panel (`#content`), do kterého se načítají JSON data.  
-- Rust styl: tmavě šedá, rezavě oranžová, červené prvky.  
-- Mapa: obrázek na pozadí, klikatelné hotspoty s hover efektem.  
-- Statistiky hráčů v moderní tabulce s možností řazení.  
-- Čisté a moderní UI pomocí TailwindCSS.  
+- Navigačná lišta nahoře - přepíná jednotlivé sekce bez reloadu.
+- Jeden centrální obsahový panel, do kterého se načítají JSON data.
+- Rust styl: tavší barvy, rezavě oranžová, červená
+- Mapa: obrázek na pozadí, klikatelné body s hover efektem.
+- Statistiky hráčů v moderní tabulce s možností řazení.
+- Čisté a moderní UI pomocí CSS
 
 ---
 
 ## Použité technologie
 
 ### Frontend
-- HTML  
-- CSS / TailwindCSS  
-- JavaScript  
+- HTML
+- CSS
+- JavaScript
 
 ### Data
-- Data JSON soubory pro statistiky hráčů, mapy a informací.
-
-### AJAX  
-- Dynamické vkládání obsahu do `#content`  
-- Klikací hotspoty na mapě → načtení JSON informací  
-- Generování tabulky, filtrace, řazení
-
-### Backend
-- Python.
+- Data JSON soubory.
 
 ### Verzování
-- Git + GitHub  
-- Repozitář zpřístupněný vyučujícímu
+- Git + GitHub
+- repozitář zpřístupněný vyučujícímu.
 
 ---
 
-## Očekávaný přínos / co se naučím
-- Používání JSON dat a jejich dynamické načítání pomocí AJAX  
-- Práci s interaktivní mapou a klikacími body  
-- Implementaci popup oken a práce s DOM  
-- Tvorbu responzivního UI a přepínacích sekcí  
-- Správnou organizaci projektu a verzování přes GitHub  
-- Práci s tabulkami, filtrováním a řazením dat
+## Očekávaný přínos
+- Naučení se programovacího jazyka JavaScript.
+- Používání JSON dat a jejich dynamické načítání pomocí AJAX.
+- Implementaci popup oken a práce s DOM.
+- Tvorbu responzivního UI a přepínacích sekcí.
+- Správnou organizaci projektu a verzování přes GitHub.
+- Práci s tabulkami, filtrováním a řazením dat.
