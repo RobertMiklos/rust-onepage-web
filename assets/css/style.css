@@ -9,7 +9,7 @@
     --bg-color: #121212;
     --panel-color: #1e1e1e;
     --border-glow: 0 0 1em rgba(206, 66, 43, 0.3);
-    --border-glow-active: 0 0 1em rgba(160, 160, 160, 0.3)
+    --border-glow-active: 0 0 1em rgba(160, 160, 160, 0.3);
 }
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/background_img.png);
@@ -82,7 +82,7 @@ nav{
     min-height: 20em;
     margin: 4em auto;
     backdrop-filter: blur(2em);
-    box-shadow: var(--border-glow-active);
+    box-shadow: var(--border-glow);
     border-radius: 1em;
 }
 #headingSpace{
@@ -93,17 +93,22 @@ nav{
     color: var(--rust-color);
     letter-spacing: 0.2em;
     border-bottom: solid 0.1em var(--rust-color);
+    background: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 #mainSpace{
     width: auto;
     padding: 3em;
-    /* backdrop-filter: blur(1em); */
     transition: opacity 0.3s ease-in-out;
     min-height: auto;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     color: var(--text-main);
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
+}
+.homePageHeading{
+    font-size: 4em;
 }
 .homePageParagraph{
     font-size: 2em;
@@ -148,4 +153,24 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     /* min-height: 25em; */
+}
+.aboutPageParagraph{
+    font-size: 1.5em;
+}
+.aboutPageList{
+    list-style: none;
+    padding: 0;
+    margin: 2em 0;
+}
+.aboutPageList li{
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 0.8em;
+    padding: 1em 1.5em;
+    border-left: 0.1em solid var(--rust-color);
+    transition: transform 0.2s ease;
+}
+.aboutPageList li:hover{
+    background: rgba(206, 66, 43, 0.1);
+    transform: translateX(0.7em);
 }
