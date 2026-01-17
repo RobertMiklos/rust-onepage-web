@@ -2,21 +2,38 @@
   {
     "heading": "Příkazy na serveru",
     "commands": [
-    {
-      "command": "/outpost",
-      "description": "Tenhle command tě portne do outpostu za 20 sekund."
-    },
-    {
-      "command": "/home",
-      "description": "Tenhle command tě portne do tvojí base za 20 sekund."
-    },
-    {
-      "command": "/tpr jméno_hráče",
-      "description": "Tenhle command tě portne na hráče kterého jste zadali za 20 sekund." 
-    }
+      {
+        "command": "/outpost",
+        "description": "Tenhle command tě portne do outpostu za 20 sekund."
+      },
+      {
+        "command": "/home",
+        "description": "Tenhle command tě portne do tvojí base za 20 sekund."
+      },
+      {
+        "command": "/tpr jméno_hráče",
+        "description": "Tenhle command tě portne na hráče kterého jste zadali za 20 sekund."
+      },
+      {
+        "command": "/kit",
+        "description": "Otevře menu s dostupnými balíčky předmětů (např. startovní kit nebo kit pro stavbu)."
+      },
+      {
+        "command": "/remove",
+        "description": "Aktivuje režim odstraňování vlastních objektů. Stačí bouchnout do zdi, kterou jsi postavil špatně."
+      },
+      {
+        "command": "/trade jméno_hráče",
+        "description": "Pošle žádost o bezpečný obchod hráči na dálku. Otevře se okno pro výměnu surovin."
+      },
+      {
+        "command": "/backpack",
+        "description": "Otevře tvůj virtuální batoh, který ti dává extra úložný prostor navíc k tvému inventáři."
+      },
+      {
+        "command": "/sethome název",
+        "description": "Uloží tvou aktuální pozici jako domov pod zadaným názvem (můžeš jich mít víc)."
+      }
     ]
   }
 ]
-  
-  
-  

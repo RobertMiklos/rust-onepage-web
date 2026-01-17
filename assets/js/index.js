@@ -17,6 +17,10 @@ function clearSpace() {
 
     headingSpace.className = ""
     mainSpace.className = ""
+
+    mainSpace.style.animation = 'none';
+    mainSpace.offsetHeight;
+    mainSpace.style.animation = null;
 }
 
 
@@ -37,6 +41,13 @@ function pasteHomePageData(data) {
     let dataBtn = data.find(i => i.btn)
 
     mainSpace.classList.add("homePageMainSpace")
+
+    const deco = document.createElement("span")
+    deco.textContent = "Vítejte v pustině"
+    deco.style.color = "var(--rust-color)"
+    deco.style.letterSpacing = "5px"
+    deco.style.textTransform = "uppercase"
+    mainSpace.appendChild(deco)
 
     const h1 = document.createElement("h1")
     h1.classList.add("homePageHeading")

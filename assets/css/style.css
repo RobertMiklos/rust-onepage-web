@@ -1,3 +1,7 @@
+html{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/background_img.png) no-repeat center center fixed;
+    background-size: cover;
+}
 *{
     font-family: "Roboto Condensed", sans-serif;
     box-sizing: border-box;
@@ -12,25 +16,25 @@
     --border-glow-active: 0 0 1em rgba(160, 160, 160, 0.3);
 }
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/background_img.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--bg-color);
-    color: var(--text-main);
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
 }
 nav{
     background-color: var(--panel-color);
     padding: 1em;
-    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.5);
     border-bottom: solid 0.2em var(--rust-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 #logoBtn{
     width: 4em;
@@ -77,16 +81,13 @@ nav{
     transform: translateY(0.4em);
 }
 #app{
-    /* background-color: var(--panel-color); */
+    flex: 1;
+    width: 100%;
     max-width: 65em;
-    min-height: 20em;
     margin: 4em auto;
     backdrop-filter: blur(2em);
-    box-shadow: var(--border-glow);
-    border-radius: 1em;
 }
 #headingSpace{
-    /* background-color: rgb(95, 82, 82); */
     width: auto;
     padding: 2em;
     text-transform: uppercase;
@@ -108,33 +109,47 @@ nav{
     border-bottom-right-radius: 1em;
 }
 .homePageHeading{
-    font-size: 4em;
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(206, 66, 43, 0.5);
+    line-height: 1;
 }
 .homePageParagraph{
-    font-size: 2em;
+    font-size: 1.4rem;
+    max-width: 600px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    margin-bottom: 2em;
+    border-left: 3px solid var(--rust-color);
+    padding-left: 20px;
+}
+.homePageHeading, .homePageParagraph, .homePageButton{
+    animation: slideUp 0.8s ease-out forwards;
+}
+@keyframes slideUp{
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 .homePageButton{
     background-color: var(--rust-color);
-    padding: 1.2em 3em ;
-    color: var(--text-main);
-    font-size: 1.2em;
-    font-weight: 900;
+    padding: 1em 3.5em;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 2px;
     border: none;
-    border-radius: 0.5em;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
     cursor: pointer;
-    margin: 4em auto 0 auto;
-    position: relative;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 0.1em #8a2a1a;
-    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .homePageButton:hover{
-    transform: translateY(-0.1em);
-    background-color: #e34b32;
-    box-shadow: 0 0.3em 1em rgba(206, 66, 43, 0.4), 0 0.3em 0 #8a2a1a;
-    filter: brightness();
+    transform: scale(1.05);
+    background-color: #ff4d31;
+    box-shadow: 0 0 20px rgba(206, 66, 43, 0.6);
 }
 .homePageButton:active{
     transform: translateY(0.1em);
@@ -151,7 +166,10 @@ nav{
 .homePageMainSpace{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 4em 2em;
+    gap: 1.5em;
 }
 .aboutPageParagraph{
     font-size: 1.5em;
@@ -294,7 +312,7 @@ nav{
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-.statsTableWrapper {
+.statsTableWrapper{
     width: 100%;
     overflow-x: auto;
 }
@@ -330,4 +348,82 @@ nav{
 .statsTable td:first-child{
     font-weight: bold;
     color: var(--text-main);
+}
+footer{
+    width: 100%;
+    background-color: var(--panel-color);
+    border-top: 2px solid var(--rust-color);
+    padding: 1.2em 0;
+    flex-shrink: 0;
+}
+.footerContent{
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.footerContent::first-letter{
+    color: var(--rust-color);
+}
+
+@media (max-width: 768px){
+    #navLinks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5em;
+        margin-right: 0;
+    }
+    #navLinks button{
+        margin: 0.2em;
+        font-size: 0.9rem;
+        padding: 0.5em;
+    }
+    nav{
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    #logoBtn{
+        margin: 0 0 0.5em 0;
+    }
+    #app{
+        margin: 1em;
+        width: calc(100% - 2em);
+    }
+    .homePageHeading{
+        font-size: 2.5rem;
+    }
+    .homePageParagraph{
+        font-size: 1.1rem;
+    }
+    .statsTableWrapper{
+        overflow-x: auto;
+    }
+    .statsTable th, .statsTable td{
+        padding: 0.5em;
+        font-size: 0.85rem;
+    }
+}
+
+@keyframes pageIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+#mainSpace{
+    animation: pageIn 0.5s ease-out forwards;
+}
+@keyframes pulseGlow{
+    0% { box-shadow: 0 0 5px rgba(206, 66, 43, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(206, 66, 43, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(206, 66, 43, 0.4); }
+}
+#navLinks button:hover{
+    animation: pulseGlow 1.5s infinite ease-in-out;
 }
