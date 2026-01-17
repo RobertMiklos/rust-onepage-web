@@ -1,0 +1,68 @@
+[
+  {
+    "heading": "Průvodce monumenty",
+    "mapImage": "../../images/map.png",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Large Oil Rig",
+        "posX": 88,
+        "posY": 12,
+        "details": {
+          "radProtection": "0 Rads",
+          "tier": "Tier 3",
+          "hasKeycard": true,
+          "requirements": ["Blue Card", "Red Card", "Electric Fuse"]
+        }
+      },
+      {
+        "id": 2,
+        "name": "Water Treatment Plant",
+        "posX": 67,
+        "posY": 48,
+        "details": {
+          "radProtection": "10 Rads",
+          "tier": "Tier 2",
+          "hasKeycard": true,
+          "requirements": ["Blue Card", "Electric Fuse"]
+        }
+      },
+      {
+        "id": 3,
+        "name": "Arctic Research Base",
+        "posX": 63,
+        "posY": 39,
+        "details": {
+          "radProtection": "10 Rads / Cold Protection",
+          "tier": "Tier 2",
+          "hasKeycard": true,
+          "requirements": ["Blue Card", "Electric Fuse"]
+        }
+      },
+      {
+        "id": 4,
+        "name": "Oxum's Gas Station",
+        "posX": 30,
+        "posY": 42,
+        "details": {
+          "radProtection": "0 Rads",
+          "tier": "Tier 1",
+          "hasKeycard": false,
+          "requirements": null
+        }
+      },
+      {
+        "id": 5,
+        "name": "Train Yard",
+        "posX": 42,
+        "posY": 30,
+        "details": {
+          "radProtection": "10 Rads",
+          "tier": "Tier 2",
+          "hasKeycard": true,
+          "requirements": ["Blue Card", "Electric Fuse"]
+        }
+      }
+    ]
+  }
+]
